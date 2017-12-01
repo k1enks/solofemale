@@ -1,0 +1,83 @@
+/* style sheet
+
+font-family: 'GFS Didot', serif; (headings)
+font-family: 'Oswald', sans-serif; (paragraphs)
+
+font-family: 'Yeseva One', cursive;
+font-family: 'Roboto', sans-serif;
+
+font-family: 'Lobster', cursive;
+font-family: 'EB Garamond', serif;
+
+colors:
+
+*/
+
+/* ---- CSS RESET --------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%; /* This ensures an image never breaks it's container */
+}
+
+[class*=grid-][class*=-equalHeight]>[class*=col] {
+  display:block;
+  /* This overrides a quirk with gridlex where contents inside of equal height containers become columns themselves */
+}
+
+
+body {
+  font-family: 'EB Garamond', serif;
+  color: RGBA(249, 60, 47, 1.00);
+  background-color: #EAEAEA;
+}
+
+#main {
+  background-image: url("/images/ekc.jpg");
+  background-size: 100%;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 300px 300px 0 0;
+  border-color: RGBA(21, 30, 63, 1.00) transparent transparent transparent;
+}
+
+.overlap {
+  margin-top: -280px;
+  margin-left: 20px;
+}
+
+h1,h2,h3,h4,h5 {
+  font-family: 'Lobster', cursive;
+  color: RGBA(249, 60, 47, 1.00);
+}
+
+nav {
+  position: absolute;
+}
+
+nav a {
+  color: RGBA(237, 106, 90, .70);
+  text-decoration: none;
+  font-family: 'EB Garamond', serif;
+}
+
+#head {
+  text-align: left;
+  padding: 70vh 5vw 10vh 75vw;
+}
+
+.cs {
+  text-align: center;
+}
+
+footer {
+  min-height: 80px;
+}
